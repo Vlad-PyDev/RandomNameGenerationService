@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Verdana', sans-serif;
+  background: linear-gradient(135deg, #FF9A9E, #FAD0C4);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background: white;
+  padding: 30px 50px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+.button {
+  background-color: #FF6F61;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  cursor: pointer;
+}
+input, select {
+  padding: 8px;
+  margin: 5px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

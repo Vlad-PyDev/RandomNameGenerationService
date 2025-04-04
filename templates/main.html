@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Генератор имен</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Сгенерируйте имена</h1>
+    <form method="post" action="{{ url_for('names') }}">
+      <label for="gender">Выберите пол:</label>
+      <select name="gender" id="gender">
+        <option value="male">Мужской</option>
+        <option value="female">Женский</option>
+      </select>
+      <br><br>
+      <label for="count">Количество имен:</label>
+      <input type="number" name="count" id="count" min="1" value="1">
+      <br><br>
+      <button type="submit">Сгенерировать</button>
+    </form>
+    {% if names %}
+      <h2>Результаты:</h2>
+      <ul>
+        {% for name in names %}
+          <li>{{ name }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    <a href="{{ url_for('index') }}" class="button">На главную</a>
+  </div>
+  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
