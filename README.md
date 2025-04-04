@@ -2,7 +2,7 @@
 
 Service to generate random names
 
-Simple web service that can generate random names on Python with flask and qrcode
+Simple web service that can generate random names on Python with flask
 
 # To Dowload
 
